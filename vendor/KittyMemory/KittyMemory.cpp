@@ -4,6 +4,9 @@
 //  Created by MJ (Ruit) on 1/1/19.
 //
 
+#include <climits>
+#include <cstring>
+
 #if USE_DOBBY_CODE_PATCH
 #include <dobby.h>
 #endif
