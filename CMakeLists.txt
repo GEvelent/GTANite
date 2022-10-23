@@ -65,7 +65,7 @@ conan_cmake_configure(REQUIRES fmt/8.1.1 magic_enum/0.8.1 nlohmann_json/3.11.2 s
 if (${CMAKE_SYSTEM_NAME} STREQUAL "Android" AND NOT ${CMAKE_HOST_SYSTEM_NAME} STREQUAL "Android")
     # Create Conan profile for cross-compiling based on current
     # CMake information.
-    include(../cmake/conan/android_cross_compiling.cmake)
+    include(cmake/conan/android_cross_compiling.cmake)
     conan_cmake_install(PATH_OR_REFERENCE ${CMAKE_CURRENT_BINARY_DIR}
             INSTALL_FOLDER ${CMAKE_BINARY_DIR}/conan
             BUILD missing
